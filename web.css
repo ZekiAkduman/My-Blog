@@ -1,0 +1,244 @@
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: black;
+    color: #333;
+}
+img 
+{
+    width: 100%;
+    vertical-align: middle;
+}
+p 
+{
+    text-align: justify;
+    line-height: 1.3;
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none; 
+}
+button
+{
+    padding: 14px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Header */
+
+header 
+{
+    position: relative;
+    background-color: lightgray;
+}
+.centered 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.reverseBtn 
+{
+    background-color: #333;
+    color: #f4bd01;
+    transition: ease-out 0.5s
+}
+.reverseBtn:hover
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.minHeader
+{
+    padding:5px 0px 5px 10px;
+    display: none;
+}
+
+/* Navigation */
+
+nav ul 
+{
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+}
+nav ul li a
+{
+    display: block;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    transition: ease-out 0.3s;
+}
+nav ul li a:hover 
+{
+    padding-left: 30px;
+    color: #f4bd01;
+
+}
+
+/* Flexbox */
+
+.flex-container 
+{
+    display: flex;
+}
+.justify-center
+
+{
+    justify-content: center;
+}
+.max-width 
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* Ana İçerik */
+
+#mainContent 
+{
+    flex: 8;
+    padding: 10px;
+}
+
+/* Yan İçerik */
+
+#sideContent 
+{
+    flex: 4;
+    padding: 10px;
+}
+
+/* Card'lar */
+
+.card 
+{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.card h5
+{
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Popüler yazılar */
+
+.populerText
+{
+    margin-top: 3px;
+    transition: ease-out 0.3s;
+}
+.populerText:hover 
+{
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+
+/* Inputs */
+
+.btn 
+{
+    background-color: #f4bd01;
+    color: #333;
+    transition: ease-out 0.5s
+}
+.btn:hover
+{
+    background-color: #333;
+    color: #f4bd01;
+}
+
+/* Image */
+
+.cardImage
+{
+    border-radius:4px;
+}
+
+/* Sosyal İçerikler */
+
+#social 
+{
+    display: flex;
+}
+#social li 
+{
+    padding: 10px;
+}
+#social li a 
+{
+    font-size: 2rem;
+    color: #f4bd01;
+    transition: ease-out 0.5s;
+}
+#social li a:hover 
+{
+    color: #333;
+}
+/* Footer*/
+
+footer 
+{
+    padding: 20px 0;
+    background: gray;
+}
+footer section
+{
+    flex: 1;
+    padding: 0 20px;
+}
+.footerList li
+{
+    padding: 0 0 20px;
+}
+.footerList li a
+{
+    color:#333;
+    transition: ease-out 0.3s;
+}
+.footerList li a:hover
+{
+padding-left:10px;
+}
+.footerP
+{
+    width: 50%;
+    text-align:left;
+}
+/* Medya Sorguları */
+
+@media screen and (max-width: 768px) 
+{
+.flex-container, nav ul 
+{
+    flex-direction: column;
+}
+.maxHeader
+    {
+    display: none;
+    }
+.minHeader 
+{
+    display: block;
+    }
+
+}
+
+    
+
+
+    
